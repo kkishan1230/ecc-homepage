@@ -1,0 +1,494 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Libre+Franklin:wght@100;200;300;400;500;600;700;800;900&family=Merriweather:wght@300;400;700;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&family=Urbanist:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* default css */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+}
+
+a {
+  font-family: "Urbanist", sans-serif;
+  text-decoration: none;
+  color: #272727;
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Merriweather", sans-serif;
+}
+
+h1 {
+  font-size: 64px;
+}
+.heading1 {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 120%;
+}
+
+p {
+  font-family: "Urbanist", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 125%;
+  font-style: normal;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* utility classes */
+.grid {
+  display: grid;
+}
+
+.col-sm-1,
+.col-sm-10,
+.col-sm-11,
+.col-sm-12,
+.col-sm-2,
+.col-sm-3,
+.col-sm-4,
+.col-sm-5,
+.col-sm-6,
+.col-sm-7,
+.col-sm-8,
+.col-sm-9 {
+  position: relative;
+  width: 100%;
+}
+@media (min-width: 576px) {
+  .col-sm-1 {
+    -ms-flex: 0 0 8.333333%;
+    flex: 0 0 8.333333%;
+    max-width: 8.333333%;
+  }
+  .col-sm-2 {
+    -ms-flex: 0 0 16.666667;
+    flex: 0 0 16.666667%;
+    max-width: 16.666667%;
+  }
+  .col-sm-3 {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  .col-sm-4 {
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+  .col-sm-5 {
+    -ms-flex: 0 0 41.666667%;
+    flex: 0 0 41.666667%;
+    max-width: 41.666667%;
+  }
+  .col-sm-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .col-sm-7 {
+    -ms-flex: 0 0 58.333333%;
+    flex: 0 0 58.333333%;
+    max-width: 58.333333%;
+  }
+  .col-sm-8 {
+    -ms-flex: 0 0 66.666667%;
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+  }
+  .col-sm-9 {
+    -ms-flex: 0 0 75%;
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+  .col-sm-10 {
+    -ms-flex: 0 0 83.333333%;
+    flex: 0 0 83.333333%;
+    max-width: 83.333333%;
+  }
+  .col-sm-11 {
+    -ms-flex: 0 0 91.666667%;
+    flex: 0 0 91.666667%;
+    max-width: 91.666667%;
+  }
+  .col-sm-12 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.justify-center {
+  justify-content: center;
+}
+.align-center {
+  align-items: center;
+}
+
+.justify-space {
+  justify-content: space-between;
+}
+
+.block {
+  display: block;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+/* fonts  */
+
+.inter {
+  font-family: "Inter", sans-serif;
+}
+
+.libre {
+  font-family: "Libre Franklin", sans-serif;
+}
+
+.open-sans {
+  font-family: "Open Sans", sans-serif;
+}
+
+.playfair {
+  font-family: "Playfair Display", serif;
+}
+
+.poppins {
+  font-family: "Poppins", sans-serif;
+}
+
+.space-gro {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.urbanist {
+  font-family: "Urbanist", sans-serif;
+}
+
+.merriweather {
+  font-family: "Merriweather", serif;
+}
+
+/* containers */
+
+/* container 1714px for header only */
+
+.container-1714 {
+  max-width: 1714px;
+  margin-inline: auto;
+}
+
+@media (min-width: 560px) {
+  .container-1714 {
+    max-width: 520px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container-1714 {
+    max-width: 728px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container-1714 {
+    max-width: 1160px;
+  }
+}
+
+@media (min-width: 1750px) {
+  .container-1714 {
+    max-width: 1714px;
+  }
+}
+
+/* container 1595px */
+
+.container-1595 {
+  max-width: 1595;
+  margin-inline: auto;
+}
+
+@media (min-width: 560px) {
+  .container-1595 {
+    max-width: 480px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container-1595 {
+    max-width: 688px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container-1595 {
+    max-width: 1100px;
+  }
+}
+
+@media (min-width: 1750px) {
+  .container-1595 {
+    max-width: 1595px;
+  }
+}
+
+/** header **/
+.header .logo-img {
+  width: 214px;
+}
+
+.header .company-type {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 145%;
+  color: #272727;
+}
+
+.header .logo-container * {
+  margin-inline: auto;
+}
+
+.header .request-sample {
+  width: 177px;
+  height: 50px;
+  background: rgba(255, 179, 201, 0.2);
+  border-radius: 65px;
+  border: none;
+  /* fonts */
+  font-family: "Urbanist";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 145%;
+  color: #444444;
+}
+
+.header .navbar {
+  padding: 28px 0;
+  margin-top: 28px;
+  border: 1px solid #272727;
+  border-inline: none;
+}
+
+.header .links {
+  gap: 36px;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.header input {
+  padding: 12px 44px;
+  width: 338px;
+  height: 48px;
+  background: #ffffff;
+  border: 1px solid #8c8c8c;
+  border-radius: 35px;
+}
+
+.header .search-icon {
+  height: 48px;
+  left: 20px;
+}
+
+/* home banner */
+
+.home-banner {
+  position: relative;
+  bottom: 1px;
+  background: url("../images/home-page/home-banner.png") no-repeat center;
+}
+
+.home-banner .container-1595 {
+  height: 650px;
+  color: #ffffff;
+}
+
+.home-banner .head {
+  font-weight: 300;
+  max-width: 871px;
+  top: 427px;
+}
+
+/* home-cards-carousel  */
+.home-card-carousel {
+  height: 923px;
+  margin-top: 264px;
+  overflow: hidden;
+}
+
+.home-card-carousel .bg-box {
+  width: 960px;
+  height: 923px;
+  background: rgba(248, 231, 214, 0.26);
+  right: -612px;
+}
+
+.home-card-carousel .carousel-container {
+  padding-left: 160px;
+  padding-top: 70px;
+}
+
+.home-card-carousel .main-head {
+  margin-top: 43px;
+}
+
+.home-card-carousel .main-head h2 {
+  max-width: 532px;
+}
+
+.home-card-carousel .our-services .head {
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 60px;
+  color: #362a43;
+}
+
+.home-card-carousel .our-services .text {
+  line-height: 26px;
+  color: #464646;
+  max-width: 423px;
+}
+
+.home-card-carousel .card {
+  width: 350px;
+  padding: 20px;
+  box-shadow: 0px 4px 100px rgba(74, 148, 154, 0.1);
+  background-color: #ffffff;
+  margin-right: 30px;
+}
+
+.home-card-carousel .card-desc {
+  padding-inline: 12px;
+}
+
+.home-card-carousel .carousel .head {
+  font-size: 22px;
+  line-height: 28px;
+  color: #362a43;
+  margin-top: 6px;
+}
+.home-card-carousel .carousel .text {
+  color: rgba(54, 42, 67, 0.8);
+  margin-bottom: 18px;
+}
+
+.home-card-carousel .read-more {
+  gap: 11px;
+  cursor: pointer;
+}
+
+.home-card-carousel .read-more-text {
+  font-weight: 500;
+}
+/* slick arrows */
+
+.home-card-carousel .prev-arrow,
+.home-card-carousel .next-arrow {
+  position: absolute;
+  top: -93px;
+  z-index: 500;
+  width: 50px;
+  height: 50px;
+  background: rgba(255, 179, 201, 0.2);
+  border: none;
+  border-radius: 50%;
+}
+.home-card-carousel .next-arrow {
+  right: 50px;
+}
+
+.home-card-carousel .prev-arrow {
+  right: 110px;
+}
+
+.home-card-carousel .next-arrow img,
+.home-card-carousel .prev-arrow img {
+  width: 12px;
+}
+/* blurr-img carousel */
+.blurr-img-carousel {
+  background: url("../images/home-page/section3-bg.png") no-repeat center;
+  padding: 150px 0;
+}
+
+.blurr-img-carousel .head {
+  font-size: 64px;
+  max-width: 1500px;
+  line-height: 80px;
+  color: #111111;
+  margin-bottom: 54px;
+}
+
+.blurr-img-carousel .blurr-text-container {
+  bottom: 0;
+  padding: 58px 63px;
+  width: 100%;
+  backdrop-filter: blur(25px);
+}
+
+.blurr-img-carousel .blurr-text {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+  max-width: 367px;
+}
+/* img-with-captions */
+
+.img-with-captions {
+  margin-top: 350px;
+}
+
+.img-with-captions .img-container {
+  height: 44px;
+}
+
+.img-with-captions .img-container img {
+  height: 100%;
+}
+
+.img-with-captions .about {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 38px;
+  color: #111111;
+  margin-left: 3px;
+}
+.img-with-captions .hr {
+  flex: 1;
+  border: 1px solid #111111;
+  margin-left: 34px;
+}
