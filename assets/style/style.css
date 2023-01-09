@@ -567,3 +567,45 @@ button {
   margin-left: 167px;
   max-width: 906px;
 }
+.home-box-carousel .box {
+  width: 49.2vw !important;
+  margin-inline: auto;
+  background: #ffffff;
+  border: 1px solid #111111;
+  padding: 35px;
+  display: flex;
+  margin-inline: 50px;
+}
+
+.home-box-carousel .text {
+  font-family: "Urbanist";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 38px;
+  margin-bottom: 39px;
+}
+
+.home-box-carousel .hr {
+  border: 1px solid #111111;
+  margin-bottom: 39px;
+}
+
+.home-box-carousel .name {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: #111111;
+  margin-bottom: 10px;
+}
+.home-box-carousel .designation {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #8f9396;
+}
+
+.home-box-carousel .text-container {
+  padding-left: 39px;
+  padding-top: 52px;
+}
