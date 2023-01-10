@@ -643,12 +643,17 @@ button {
 
 /* group image section */
 
+.home-group-image {
+  margin-top: 152px;
+}
+
 .home-group-image .head,
 .home-group-image .text-container {
   max-width: 654px;
 }
 
-.home-group-image .about-us {
+.home-group-image .about-us,
+.home-img-with-stats .learn-more {
   margin-top: 60px;
   max-width: 112px;
   padding-right: 30px;
@@ -685,7 +690,7 @@ button {
 }
 
 .home-ecc-process .cards {
-  grid-template-columns: auto auto auto;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 21px;
   margin-top: 40px;
 }
@@ -707,4 +712,45 @@ button {
 .home-ecc-process .card-text {
   color: #808080;
   line-height: 32px;
+}
+
+/* img with statistics */
+.home-img-with-stats {
+  margin-top: 185px;
+}
+
+.home-img-with-stats .text-container {
+  padding-left: 152px;
+  align-self: flex-end;
+}
+
+.home-img-with-stats .text {
+  margin-top: 25px;
+  margin-bottom: 112px;
+  color: #666666;
+  letter-spacing: 0.005em;
+}
+
+.home-img-with-stats .head {
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 120%;
+  letter-spacing: 0.005em;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #1a242d;
+}
+
+.home-img-with-stats .text-stats {
+  letter-spacing: 0.005em;
+  color: #1a242d;
+}
+
+.home-img-with-stats .stats-grid {
+  grid-template-columns: auto auto;
+  row-gap: 24px;
+}
+
+.home-img-with-stats .learn-more {
+  margin-top: 47px;
+  max-width: fit-content;
 }
