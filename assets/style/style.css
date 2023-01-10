@@ -813,3 +813,75 @@ button {
 .home-latest-carousel .card {
   box-shadow: none;
 }
+
+/* Footer */
+
+footer {
+  padding-top: 115px;
+  background-position: center;
+  background-size: cover;
+  background: url("../images/home-page/footer-bg.png");
+  padding-bottom: 132px;
+}
+
+.footer-about {
+  margin-bottom: 41.86px;
+}
+
+.footer-about-wh {
+  width: 464.32px;
+  height: 114.8px;
+}
+
+.footer-about img {
+  width: 88px;
+  height: 40px;
+}
+.footer-headText {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 43px;
+  color: #242a2e;
+}
+.footer-img-container {
+  border-right: 1.34px solid #242a2e;
+  margin-right: 21px;
+  padding-right: 22px;
+}
+
+.footer-navigateHead {
+  margin-bottom: 38px;
+}
+
+.footer-about-text {
+  font-family: "Urbanist";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #48545c;
+}
+.footer-navigateText {
+  gap: 28.7px;
+}
+
+footer .social-icons {
+  gap: 24px;
+}
+
+footer .social-icons > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background-color: #feeef3;
+  padding: 0;
+}
+
+footer .social-icons img {
+  height: 50%;
+}
