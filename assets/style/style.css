@@ -754,3 +754,62 @@ button {
   margin-top: 47px;
   max-width: fit-content;
 }
+/* home latest release carousel */
+
+.home-latest-carousel .home-card-carousel .card {
+  padding: 0;
+}
+.home-latest-carousel .date {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  color: #6f707a;
+}
+.home-latest-carousel .text-container {
+  padding: 11px 40px 33px 30px;
+  background: #ffffff;
+  border: 1px solid rgba(17, 17, 17, 0.2);
+}
+
+.home-latest-carousel .latest-head {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  color: #0f1121;
+  margin-top: 15px;
+}
+
+.home-latest-carousel .text-para {
+  font-weight: 700;
+  line-height: 24px;
+  color: #6f707a;
+  margin-top: 18px;
+}
+
+.home-latest-carousel .img-container {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #d8d8d8;
+}
+
+.home-latest-carousel .name-designation {
+  gap: 12px;
+  margin-top: 30px;
+}
+
+.home-latest-carousel .name {
+  line-height: 20px;
+  color: #0f1121;
+}
+
+.home-latest-carousel .designation {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: #6f707a;
+}
+
+.home-latest-carousel .card {
+  box-shadow: none;
+}
