@@ -445,6 +445,15 @@ button {
 .home-card-carousel .prev-arrow img {
   width: 12px;
 }
+
+.home-card-carousel .next-svg,
+.home-card-carousel .prev-svg {
+  transition: all 0.5s;
+  stroke-dasharray: 565;
+  stroke-dashoffset: 565;
+  transform: rotate(-90deg);
+}
+
 /* blurr-img carousel */
 .blurr-img-carousel {
   background: url("../images/home-page/section3-bg.png") no-repeat center;
