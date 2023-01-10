@@ -487,14 +487,16 @@ button {
   height: 100%;
 }
 
-.img-with-captions .about {
+.img-with-captions .about,
+.home-ecc-process .process {
   font-weight: 600;
   font-size: 32px;
   line-height: 38px;
   color: #111111;
   margin-left: 3px;
 }
-.img-with-captions .hr {
+.img-with-captions .hr,
+.home-ecc-process .hr {
   flex: 1;
   border: 1px solid #111111;
   margin-left: 34px;
@@ -637,4 +639,72 @@ button {
 }
 .home-box-carousel .slick-current {
   border-radius: 24px;
+}
+
+/* group image section */
+
+.home-group-image .head,
+.home-group-image .text-container {
+  max-width: 654px;
+}
+
+.home-group-image .about-us {
+  margin-top: 60px;
+  max-width: 112px;
+  padding-right: 30px;
+  font-weight: 700;
+  color: #0a67a6;
+  border-bottom: 3px solid #0a67a6;
+}
+
+.home-group-image .text-container {
+  align-self: flex-end;
+}
+
+.home-group-image .img-container {
+  margin-top: 80px;
+}
+
+/* ecc processes */
+.home-ecc-process {
+  margin-top: 189px;
+}
+
+.home-ecc-process .head {
+  max-width: 642px;
+}
+
+.home-ecc-process .text {
+  max-width: 787px;
+  line-height: 32px;
+  color: #808080;
+}
+
+.home-ecc-process .head-para-container {
+  margin-top: 80px;
+}
+
+.home-ecc-process .cards {
+  grid-template-columns: auto auto auto;
+  gap: 21px;
+  margin-top: 40px;
+}
+
+.home-ecc-process .card {
+  padding: 40px 52px 128px;
+  border: 1px solid #111111;
+  border-radius: 24px;
+  background: #ffffff;
+}
+
+.home-ecc-process .card-head {
+  font-size: 32px;
+  line-height: 48px;
+  color: #2e2e2e;
+  margin-bottom: 16px;
+}
+
+.home-ecc-process .card-text {
+  color: #808080;
+  line-height: 32px;
 }
