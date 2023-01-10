@@ -421,7 +421,9 @@ button {
 /* slick arrows */
 
 .home-card-carousel .prev-arrow,
-.home-card-carousel .next-arrow {
+.home-card-carousel .next-arrow,
+.home-box-carousel .prev-arrow,
+.home-box-carousel .next-arrow {
   position: absolute;
   top: -93px;
   z-index: 500;
@@ -556,6 +558,9 @@ button {
 
 .home-box-carousel {
   margin-top: 287px;
+  background: url("../images/home-page/section5-bg.png") no-repeat center;
+  padding-top: 153px;
+  padding-bottom: 273px;
 }
 
 .home-box-carousel .head {
@@ -566,9 +571,10 @@ button {
   color: #1a242d;
   margin-left: 167px;
   max-width: 906px;
+  margin-bottom: 139px;
 }
 .home-box-carousel .box {
-  width: 49.2vw !important;
+  width: 945px !important;
   margin-inline: auto;
   background: #ffffff;
   border: 1px solid #111111;
@@ -608,4 +614,27 @@ button {
 .home-box-carousel .text-container {
   padding-left: 39px;
   padding-top: 52px;
+}
+
+.home-box-carousel .next-arrow,
+.home-box-carousel .prev-arrow {
+  width: 60px;
+  height: 60px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.home-box-carousel .next-arrow img,
+.home-box-carousel .prev-arrow img {
+  width: 16px;
+}
+.home-box-carousel .next-arrow {
+  left: calc(50vw + 490px);
+}
+
+.home-box-carousel .prev-arrow {
+  right: calc(50vw + 490px);
+}
+.home-box-carousel .slick-current {
+  border-radius: 24px;
 }
