@@ -356,7 +356,7 @@ button {
 
 .home-card-carousel .bg-box {
   width: 960px;
-  height: 923px;
+  height: 100%;
   background: rgba(248, 231, 214, 0.26);
   right: -612px;
 }
