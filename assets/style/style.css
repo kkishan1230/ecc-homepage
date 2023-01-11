@@ -341,7 +341,7 @@ button {
   color: #ffffff;
 }
 
-.home-banner .head {
+.home-banner .heading {
   font-weight: 300;
   max-width: 871px;
   top: 427px;
@@ -349,9 +349,11 @@ button {
 
 /* home-cards-carousel  */
 .home-card-carousel {
-  height: 923px;
   margin-top: 264px;
   overflow: hidden;
+  padding-top: 70px;
+  padding-bottom: 122px;
+  margin-bottom: 223px;
 }
 
 .home-card-carousel .bg-box {
@@ -374,7 +376,7 @@ button {
   max-width: 532px;
 }
 
-.home-card-carousel .our-services .head {
+.home-card-carousel .our-services .heading {
   font-weight: 400;
   font-size: 48px;
   line-height: 60px;
@@ -399,7 +401,7 @@ button {
   padding-inline: 12px;
 }
 
-.home-card-carousel .carousel .head {
+.home-card-carousel .carousel .heading {
   font-size: 22px;
   line-height: 28px;
   color: #362a43;
@@ -460,7 +462,7 @@ button {
   padding: 150px 0;
 }
 
-.blurr-img-carousel .head {
+.blurr-img-carousel .heading {
   font-size: 64px;
   max-width: 1500px;
   line-height: 80px;
@@ -526,7 +528,7 @@ button {
   max-width: 620px;
 }
 
-.img-with-captions .head {
+.img-with-captions .heading {
   font-size: 36px;
   line-height: 45px;
   text-transform: capitalize;
@@ -574,7 +576,7 @@ button {
   padding-bottom: 273px;
 }
 
-.home-box-carousel .head {
+.home-box-carousel .heading {
   font-size: 64px;
   line-height: 120%;
   letter-spacing: 0.003em;
@@ -656,7 +658,7 @@ button {
   margin-top: 152px;
 }
 
-.home-group-image .head,
+.home-group-image .heading,
 .home-group-image .text-container {
   max-width: 654px;
 }
@@ -684,7 +686,7 @@ button {
   margin-top: 189px;
 }
 
-.home-ecc-process .head {
+.home-ecc-process .heading {
   max-width: 642px;
 }
 
@@ -740,7 +742,7 @@ button {
   letter-spacing: 0.005em;
 }
 
-.home-img-with-stats .head {
+.home-img-with-stats .heading {
   font-weight: 900;
   font-size: 48px;
   line-height: 120%;
