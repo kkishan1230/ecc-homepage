@@ -65,17 +65,14 @@ function progress_leave2(e) {
 }
 
 function dec_progress() {
-  console.log("kishan");
   const x =
     parseInt(
       document.querySelector(".home-card-carousel .slick-current").classList[0]
     ) - 1;
-  const next = document.querySelector(".home-card-carousel .next-svg");
+  console.log(x);
   const prev = document.querySelector(".home-card-carousel .prev-svg");
   const slides = 6;
-  if (x > 1) {
-    prev.style.strokeDashoffset = (565 * (6 - x)) / slides;
-  }
+  if (x > 0) prev.style.strokeDashoffset = (565 * (4 - x)) / slides;
 }
 
 function inc_progress() {
@@ -83,7 +80,6 @@ function inc_progress() {
     document.querySelector(".home-card-carousel .slick-current").classList[0]
   );
   const next = document.querySelector(".home-card-carousel .next-svg");
-  // const prev = document.querySelector(".home-card-carousel .prev-svg");
   const slides = 6;
   if (x < 4) {
     next.style.strokeDashoffset = (565 * (3 - x)) / 6;
