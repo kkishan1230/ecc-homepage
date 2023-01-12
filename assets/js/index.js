@@ -31,6 +31,14 @@ $(document).ready(function () {
 
   latest_over_leave();
   box_next_prev();
+
+  // const card_height = document.querySelectorAll(
+  //   ".home-latest-carousel .card-container"
+  // );
+  // var new_height = "600px";
+  // card_height.forEach((element) => {
+  //   console.log(element.offsetHeight);
+  // });
 });
 
 // progress bar functions for home cards carousel
@@ -242,3 +250,18 @@ function box_next_prev() {
     ).style.strokeDashoffset = (565 * (3 - y)) / 3;
   });
 }
+
+$(document).ready(function () {
+  const card_height = document.querySelectorAll(
+    ".home-latest-carousel .card-container"
+  );
+  var new_height = 0;
+  card_height.forEach((element) => {
+    if (new_height < element.offsetHeight) {
+      new_height = element.offsetHeight;
+    }
+  });
+  card_height.forEach((element) => {
+    element.style.height = `${new_height}px`;
+  });
+});

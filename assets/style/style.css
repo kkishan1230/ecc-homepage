@@ -363,6 +363,10 @@ button {
   right: -612px;
 }
 
+.home-card-carousel .carousel {
+  box-shadow: 0px 4px 100px rgba(74, 148, 154, 0.1);
+}
+
 .home-card-carousel .carousel-container {
   padding-left: 160px;
   padding-top: 70px;
@@ -812,6 +816,12 @@ button {
 
 .home-latest-carousel .home-card-carousel .card {
   padding: 0;
+  box-shadow: none;
+  /* display: flex; */
+}
+
+.home-latest-carousel .card-container {
+  height: 100%;
 }
 .home-latest-carousel .date {
   font-weight: 500;
@@ -823,6 +833,7 @@ button {
   padding: 11px 40px 33px 30px;
   background: #ffffff;
   border: 1px solid rgba(17, 17, 17, 0.2);
+  flex: 1;
 }
 
 .home-latest-carousel .latest-head {
@@ -864,7 +875,7 @@ button {
   color: #6f707a;
 }
 
-.home-latest-carousel .card {
+.home-latest-carousel .carousel {
   box-shadow: none;
 }
 
