@@ -4,16 +4,18 @@ $(document).ready(function () {
     slidesToShow: 3,
     slidesToScroll: 1,
     arrows: true,
-    prevArrow: `<button class="prev-arrow flex align-center justify-center" onmouseover="progress_over1()" onmouseleave="progress_leave1()" onclick="dec_progress()"><img src="./assets/images/home-page/prevBlackArrow.svg" /><svg class="absolute prev-svg" x="0px" y="0px" class="our_services__circle_progress" width="50px" height="50px" viewBox="0 0 200 200"><circle class="our_services__circle" stroke="#FFB3C9"fill="none" stroke-width="10" cx="100" cy="100" r="90"></circle></svg></button>`,
+    prevArrow: `<button class="prev-arrow flex align-center justify-center " onmouseover="progress_over1()" onmouseleave="progress_leave1()" onclick="dec_progress()"><img src="./assets/images/home-page/prevBlackArrow.svg" /><svg class="absolute prev-svg" x="0px" y="0px" class="our_services__circle_progress" width="50px" height="50px" viewBox="0 0 200 200"><circle class="our_services__circle" stroke="#FFB3C9"fill="none" stroke-width="10" cx="100" cy="100" r="90"></circle></svg></button>`,
     nextArrow: `<button class="next-arrow flex align-center justify-center" onmouseover="progress_over2()" onmouseleave="progress_leave2()" onclick="inc_progress()"><img src="./assets/images/home-page/nextBlackArrow.svg" /><svg class="absolute next-svg" x="0px" y="0px" class="our_services__circle_progress" width="50px" height="50px" viewBox="0 0 200 200"><circle class="our_services__circle" stroke="#FFB3C9"fill="none" stroke-width="10" cx="100" cy="100" r="90"></circle></svg></button>`,
   });
 
   // blurr-img carousel
   $(".blurr-carousel").slick({
-    infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    infinite: true,
+    infinite: false,
+    arrows: true,
+    prevArrow: `<button class="prev-arrow flex align-center justify-center absolute" onmouseover="blurr_over1()" onmouseleave="blurr_leave1()" onclick="blurr_prev()"><img src="./assets/images/home-page/back-Icon.svg" /><svg class="absolute prev-svg" x="0px" y="0px" class="our_services__circle_progress" width="50px" height="50px" viewBox="0 0 200 200"><circle class="our_services__circle" stroke="#FFB3C9"fill="none" stroke-width="10" cx="100" cy="100" r="90"></circle></svg></button>`,
+    nextArrow: `<button class="next-arrow flex align-center justify-center absolute" onmouseover="blurr_over2()" onmouseleave="blurr_leave2()" onclick="blurr_next()"><img src="./assets/images/home-page/fw-Icon.svg" /><svg class="absolute next-svg" x="0px" y="0px" class="our_services__circle_progress" width="50px" height="50px" viewBox="0 0 200 200"><circle class="our_services__circle" stroke="#FFB3C9"fill="none" stroke-width="10" cx="100" cy="100" r="90"></circle></svg></button>`,
   });
   // box carousel
   $(".box-carousel-container").slick({
@@ -84,4 +86,43 @@ function inc_progress() {
   if (x < 4) {
     next.style.strokeDashoffset = (565 * (3 - x)) / 6;
   }
+}
+
+// Blurr image carousel
+
+function blurr_over1() {
+  const x = document.querySelector(".blurr-carousel .prev-svg");
+  const y = parseInt(
+    document.querySelector(".blurr-carousel .slick-current").classList[0]
+  );
+  x.style.strokeDashoffset = (565 * (2 - y)) / 2;
+}
+
+function blurr_leave1() {
+  const x = document.querySelector(".blurr-carousel .prev-svg");
+  x.style.strokeDashoffset = 565;
+}
+
+function blurr_over2() {
+  const x = document.querySelector(".blurr-carousel .next-svg");
+  const y = parseInt(
+    document.querySelector(".blurr-carousel .slick-current").classList[0]
+  );
+  x.style.strokeDashoffset = (565 * (2 - y)) / 2;
+}
+
+function blurr_leave2() {
+  const x = document.querySelector(".blurr-carousel .next-svg");
+  x.style.strokeDashoffset = 565;
+}
+
+function blurr_next() {
+  document.querySelector(
+    ".blurr-carousel .next-svg"
+  ).style.strokeDashoffset = 0;
+}
+
+function blurr_prev() {
+  document.querySelector(".blurr-carousel .prev-svg").style.strokeDashoffset =
+    565 / 2;
 }

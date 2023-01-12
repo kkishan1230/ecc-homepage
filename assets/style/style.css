@@ -567,6 +567,41 @@ button {
   left: 24px;
 }
 
+.blurr-img-carousel .slick-arrow {
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  background: transparent;
+  bottom: 69px;
+}
+
+.blurr-img-carousel .prev-arrow:hover,
+.blurr-img-carousel .next-arrow:hover {
+  background: rgba(255, 179, 201, 0.2);
+}
+
+.blurr-img-carousel .slick-arrow > img {
+  width: 30%;
+}
+.blurr-img-carousel .prev-svg,
+.blurr-img-carousel .next-svg {
+  transition: all 0.5s;
+  stroke-dasharray: 565;
+  stroke-dashoffset: 565;
+  transform: rotate(-90deg);
+}
+
+.blurr-img-carousel .prev-arrow {
+  z-index: 2;
+  right: 176px;
+}
+
+.blurr-img-carousel .next-arrow {
+  right: 106px;
+  z-index: 2;
+}
+
 /* home-box-carousel */
 
 .home-box-carousel {
