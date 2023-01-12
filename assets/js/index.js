@@ -25,9 +25,12 @@ $(document).ready(function () {
     arrows: true,
     centerMode: true,
     variableWidth: true,
-    prevArrow: `<button class="prev-arrow flex align-center justify-center"><img src="./assets/images/home-page/prevBlackArrow.svg" /></button>`,
-    nextArrow: `<button class="next-arrow flex align-center justify-center"><img src="./assets/images/home-page/nextBlackArrow.svg" /></button>`,
+    prevArrow: `<button class="prev-arrow flex align-center justify-center" onmouseover="box_over1()" onmouseleave="box_leave()" ><img src="./assets/images/home-page/prevBlackArrow.svg" /><svg class="absolute prev-svg" x="0px" y="0px" class="our_services__circle_progress" width="60px" height="60px" viewBox="0 0 200 200"><circle class="our_services__circle" stroke="#FFB3C9"fill="none" stroke-width="10" cx="100" cy="100" r="90"></circle></svg></button>`,
+    nextArrow: `<button class="next-arrow flex align-center justify-center" onmouseover="box_over2()" onmouseleave="box_leave()" ><img src="./assets/images/home-page/nextBlackArrow.svg" /><svg class="absolute next-svg" x="0px" y="0px" class="our_services__circle_progress" width="60px" height="60px" viewBox="0 0 200 200"><circle class="our_services__circle" stroke="#FFB3C9"fill="none" stroke-width="10" cx="100" cy="100" r="90"></circle></svg></button>`,
   });
+
+  latest_over_leave();
+  box_next_prev();
 });
 
 // progress bar functions for home cards carousel
@@ -71,7 +74,6 @@ function dec_progress() {
     parseInt(
       document.querySelector(".home-card-carousel .slick-current").classList[0]
     ) - 1;
-  console.log(x);
   const prev = document.querySelector(".home-card-carousel .prev-svg");
   const slides = 6;
   if (x > 0) prev.style.strokeDashoffset = (565 * (4 - x)) / slides;
@@ -125,4 +127,118 @@ function blurr_next() {
 function blurr_prev() {
   document.querySelector(".blurr-carousel .prev-svg").style.strokeDashoffset =
     565 / 2;
+}
+
+// box carousel progress bar
+
+function box_over1() {
+  const x = document.querySelector(".home-box-carousel .slick-current")
+    .classList[0];
+  document.querySelector(
+    ".home-box-carousel .prev-svg"
+  ).style.strokeDashoffset = (565 * (3 - x)) / 3;
+}
+
+function box_over2() {
+  const x = document.querySelector(".home-box-carousel .slick-current")
+    .classList[0];
+  document.querySelector(
+    ".home-box-carousel .next-svg"
+  ).style.strokeDashoffset = (565 * (3 - x)) / 3;
+}
+
+function box_leave() {
+  document.querySelector(
+    ".home-box-carousel .next-svg"
+  ).style.strokeDashoffset = 565;
+  document.querySelector(
+    ".home-box-carousel .prev-svg"
+  ).style.strokeDashoffset = 565;
+}
+
+//
+//
+//
+function latest_over_leave() {
+  const x = document.querySelector(".home-latest-carousel .prev-arrow");
+  const y = document.querySelector(".home-latest-carousel .next-arrow");
+  //
+  x.addEventListener("mouseover", () => {
+    const slick = parseInt(
+      document.querySelector(".home-latest-carousel .slick-current")
+        .classList[0]
+    );
+    document.querySelector(
+      ".home-latest-carousel .prev-svg"
+    ).style.strokeDashoffset = (565 * (2 - slick)) / 4;
+  });
+  //
+  x.addEventListener("mouseleave", () => {
+    document.querySelector(
+      ".home-latest-carousel .prev-svg"
+    ).style.strokeDashoffset = 565;
+  });
+
+  //
+  y.addEventListener("mouseover", () => {
+    const slick = parseInt(
+      document.querySelector(".home-latest-carousel .slick-current")
+        .classList[0]
+    );
+    document.querySelector(
+      ".home-latest-carousel .next-svg"
+    ).style.strokeDashoffset = (565 * (2 - slick)) / 4;
+  });
+  //
+  y.addEventListener("mouseleave", () => {
+    document.querySelector(
+      ".home-latest-carousel .next-svg"
+    ).style.strokeDashoffset = 565;
+  });
+
+  x.addEventListener("click", () => {
+    const slick = parseInt(
+      document.querySelector(".home-latest-carousel .slick-current")
+        .classList[0]
+    );
+    document.querySelector(
+      ".home-latest-carousel .prev-svg"
+    ).style.strokeDashoffset = (565 * 1) / 4;
+  });
+
+  y.addEventListener("click", () => {
+    const slick = parseInt(
+      document.querySelector(".home-latest-carousel .slick-current")
+        .classList[0]
+    );
+    document.querySelector(
+      ".home-latest-carousel .next-svg"
+    ).style.strokeDashoffset = (565 * 0) / 4;
+  });
+}
+
+//
+//
+//
+//
+
+function box_next_prev() {
+  const x = document.querySelector(".home-box-carousel .next-arrow");
+  const a = document.querySelector(".home-box-carousel .prev-arrow");
+  x.addEventListener("click", () => {
+    const y = document.querySelector(".home-box-carousel .slick-current")
+      .classList[0];
+    document.querySelector(
+      ".home-box-carousel .next-svg"
+    ).style.strokeDashoffset = (565 * (3 - y)) / 3;
+  });
+
+  a.addEventListener("click", () => {
+    const y = document.querySelector(".home-box-carousel .slick-current")
+      .classList[0];
+    console.log(y);
+    document.querySelector(
+      ".home-box-carousel .prev-svg"
+    ).style.strokeDashoffset = (565 * (3 - y)) / 3;
+  });
 }

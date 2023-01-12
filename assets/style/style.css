@@ -687,6 +687,14 @@ button {
   border-radius: 24px;
 }
 
+.home-box-carousel .prev-svg,
+.home-box-carousel .next-svg {
+  transition: all 0.5s;
+  stroke-dasharray: 565;
+  stroke-dashoffset: 565;
+  transform: rotate(-90deg);
+}
+
 /* group image section */
 
 .home-group-image {
