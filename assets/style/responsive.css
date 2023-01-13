@@ -4,7 +4,6 @@
   }
 }
 
-/* banners only */
 @media (min-width: 1600px) and (max-width: 1713px) {
   /* home card carousel */
   .home-card-carousel {
@@ -14,9 +13,6 @@
   .blurr-img-carousel {
     padding-top: 90px;
     padding-bottom: 90px;
-  }
-  .blurr-img-carousel .heading {
-    font-size: 48px;
   }
 
   .blurr-img-carousel .blurr-text-container {
@@ -71,5 +67,49 @@
   }
   .home-card-carousel .main-heading h2 {
     max-width: 478px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1599px) {
+  /* home banner */
+  .home-banner .container-1595 {
+    height: 500px;
+  }
+  .home-banner .heading {
+    font-size: 54px;
+    top: 320px;
+  }
+  /* home card carousel */
+  .home-card-carousel {
+    margin-top: 40px;
+    margin-bottom: 60px;
+  }
+  .home-card-carousel .heading1 {
+    font-size: 48px;
+  }
+  .blurr-img-carousel {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .blurr-img-carousel .heading {
+    font-size: 54px;
+  }
+
+  .blurr-img-carousel .blurr-text-container {
+    padding: 30px 40px;
+  }
+  .blurr-img-carousel .slick-arrow {
+    bottom: 39px;
+  }
+  .img-with-captions {
+    margin-top: 170px;
+  }
+
+  .home-box-carousel {
+    margin-top: 120px;
+    padding-top: 80px;
+  }
+  .home-box-carousel .heading {
+    font-size: 48px;
   }
 }
