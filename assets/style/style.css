@@ -136,7 +136,7 @@ button {
 
 .flex {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 
 .flex-col {
@@ -364,7 +364,7 @@ button {
 }
 
 .home-card-carousel .carousel {
-  box-shadow: 0px 4px 100px rgba(74, 148, 154, 0.1);
+  box-shadow: 0px 4px 100px rgba(74, 148, 154, 0.09);
 }
 
 .home-card-carousel .carousel-container {
@@ -821,7 +821,6 @@ button {
 .home-latest-carousel .home-card-carousel .card {
   padding: 0;
   box-shadow: none;
-  /* display: flex; */
 }
 
 .home-latest-carousel .card-container {
