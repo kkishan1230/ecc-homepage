@@ -372,11 +372,11 @@ button {
   padding-top: 70px;
 }
 
-.home-card-carousel .main-head {
+.home-card-carousel .main-heading {
   margin-top: 43px;
 }
 
-.home-card-carousel .main-head h2 {
+.home-card-carousel .main-heading h2 {
   max-width: 532px;
 }
 
@@ -813,6 +813,10 @@ button {
   max-width: fit-content;
 }
 /* home latest release carousel */
+
+.home-latest-carousel .home-card-carousel {
+  margin-bottom: 149px;
+}
 
 .home-latest-carousel .home-card-carousel .card {
   padding: 0;

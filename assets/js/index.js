@@ -244,7 +244,6 @@ function box_next_prev() {
   a.addEventListener("click", () => {
     const y = document.querySelector(".home-box-carousel .slick-current")
       .classList[0];
-    console.log(y);
     document.querySelector(
       ".home-box-carousel .prev-svg"
     ).style.strokeDashoffset = (565 * (3 - y)) / 3;
