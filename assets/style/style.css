@@ -334,17 +334,18 @@ button {
   position: relative;
   bottom: 1px;
   background: url("../images/home-page/home-banner.png") no-repeat center;
+  height: 80vh;
+  background-size: cover;
 }
 
 .home-banner .container-1595 {
-  height: 650px;
   color: #ffffff;
 }
 
 .home-banner .heading {
   font-weight: 300;
   max-width: 871px;
-  top: 427px;
+  bottom: 10vh;
 }
 
 /* home-cards-carousel  */
@@ -896,7 +897,7 @@ footer {
   margin-bottom: 41.86px;
 }
 
-.footer-about-wh {
+.footer-about-width-height {
   width: 464.32px;
   height: 114.8px;
 }
