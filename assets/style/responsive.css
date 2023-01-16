@@ -302,6 +302,7 @@
   .blurr-img-carousel .prev-arrow {
     right: 70px;
   }
+  /*  */
   .img-with-captions {
     margin-top: 100px;
   }
@@ -514,6 +515,13 @@
 }
 
 @media (min-width: 580px) and (max-width: 767px) {
+  .home-banner {
+    height: 400px;
+  }
+  .home-banner h1 {
+    font-size: 36px;
+  }
+
   .home-card-carousel .main-heading {
     flex-direction: column;
     align-items: center;
@@ -593,5 +601,77 @@
   .home-card-carousel .our-services .heading {
     text-align: center;
     font-size: 36px;
+  }
+
+  /*  */
+  .blurr-img-carousel {
+    padding: 50px 0;
+  }
+  .blurr-img-carousel .container-1595 {
+    max-width: 500px;
+  }
+  .blurr-img-carousel .heading {
+    max-width: 100%;
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 20px;
+  }
+  .blurr-img-carousel .blurr-text-container {
+    padding: 10px;
+  }
+  .blurr-img-carousel .blurr-text {
+    font-size: 14px;
+  }
+  .blurr-img-carousel .slick-arrow,
+  .blurr-img-carousel .prev-svg,
+  .blurr-img-carousel .next-svg {
+    height: 24px;
+    width: 24px;
+  }
+  .blurr-img-carousel .slick-arrow {
+    top: initial;
+    bottom: 24px;
+  }
+  .blurr-img-carousel .next-arrow {
+    right: 20px;
+  }
+  .blurr-img-carousel .prev-arrow {
+    right: 54px;
+  }
+  /*  */
+  .img-with-captions {
+    margin-top: 100px;
+  }
+  .img-with-captions .img-container {
+    height: 30px;
+  }
+
+  .img-with-captions .heading {
+    font-size: 24px;
+    line-height: 34px;
+    margin-bottom: 20px;
+  }
+  .img-with-captions .img-and-caption {
+    grid-template-columns: auto;
+  }
+  .img-with-captions .leaf-img-container {
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  .img-with-captions .heading {
+    margin-bottom: 30px;
+  }
+  .img-with-captions .text2 {
+    margin-top: 20px;
+  }
+  .img-with-captions .img2-grid {
+    margin-top: 30px;
+  }
+  .img-with-captions .learn-more {
+    margin-top: 20px;
+    transform: scale(0.7);
+  }
+  .img-with-captions .about {
+    font-size: 24px;
   }
 }
