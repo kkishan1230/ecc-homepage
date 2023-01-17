@@ -37,6 +37,14 @@ $(document).ready(function () {
     arrows: true,
     prevArrow: `<button class="prev-arrow flex align-center justify-center absolute" onmouseover="blurr_over1()" onmouseleave="blurr_leave1()" onclick="blurr_prev()"><img src="./assets/images/home-page/back-Icon.svg" /><svg class="absolute prev-svg" x="0px" y="0px" class="our_services__circle_progress" width="50px" height="50px" viewBox="0 0 200 200"><circle class="our_services__circle" stroke="#FFB3C9"fill="none" stroke-width="10" cx="100" cy="100" r="90"></circle></svg></button>`,
     nextArrow: `<button class="next-arrow flex align-center justify-center absolute" onmouseover="blurr_over2()" onmouseleave="blurr_leave2()" onclick="blurr_next()"><img src="./assets/images/home-page/fw-Icon.svg" /><svg class="absolute next-svg" x="0px" y="0px" class="our_services__circle_progress" width="50px" height="50px" viewBox="0 0 200 200"><circle class="our_services__circle" stroke="#FFB3C9"fill="none" stroke-width="10" cx="100" cy="100" r="90"></circle></svg></button>`,
+    responsive: [
+      {
+        breakpoint: 580,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
   });
   // box carousel
   $(".box-carousel-container").slick({
